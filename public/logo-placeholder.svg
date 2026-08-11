@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="title desc">
+  <title id="title">Fortified Health and Development Solutions placeholder logo</title>
+  <desc id="desc">A placeholder shield mark with the company name.</desc>
+  <rect width="360" height="96" fill="none" />
+  <g transform="translate(8 10)">
+    <rect width="76" height="76" rx="10" fill="#2E8B57" />
+    <path d="M38 10L60 22V40C60 55 50 66 38 70C26 66 16 55 16 40V22L38 10Z" fill="#FFFFFF" opacity="0.96" />
+    <path d="M38 20V56M27 38H49" stroke="#0B5563" stroke-width="7" stroke-linecap="round" />
+    <path d="M26 55C31 59 35 61 38 62C41 61 45 59 50 55" stroke="#F2A93B" stroke-width="4" stroke-linecap="round" fill="none" />
+  </g>
+  <g fill="#16302E" font-family="Arial, Helvetica, sans-serif">
+    <text x="100" y="38" font-size="23" font-weight="700">Fortified HDS</text>
+    <text x="100" y="64" font-size="15" fill="#5D6B68">Health and Development Solutions</text>
+  </g>
+</svg>
