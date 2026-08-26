@@ -34,8 +34,8 @@ export function ImageSlot({
           </div>
         )}
       </div>
-      <figcaption className="p-5">
-        <p className="font-semibold text-fhds-ink">{title}</p>
+      <figcaption className="flex items-center gap-2.5 px-4 py-2">
+        <p className="truncate text-sm font-semibold text-fhds-ink">{title}</p>
         {/* {caption ? <p className="mt-2 text-sm leading-6 text-fhds-muted">{caption}</p> : null} */}
       </figcaption>
     </figure>

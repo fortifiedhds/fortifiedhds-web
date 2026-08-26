@@ -22,29 +22,29 @@ export const services: Service[] = [
     excerpt:
       "Tailored healthcare and development consultation for governmental, corporate, private, and development-sector partners.",
     description:
-      "FHDS provides expert advisory support across healthcare planning, project management, policy and program design, capacity building, and monitoring and evaluation. The work is structured to help partners make sound decisions, deliver effective programs, and strengthen health and development outcomes.",
+      "FHDS provides expert advisory support across healthcare planning, project management, policy and programme design, capacity building, and monitoring and evaluation. The work is structured to help partners make sound decisions, deliver effective programmes, and strengthen health and development outcomes.",
     audience: [
       "Government agencies",
       "NGOs and development partners",
-      "Corporate organizations",
+      "Corporate organisations",
       "Private institutions",
     ],
     capabilities: [
       "Healthcare and development planning",
       "Project design and implementation support",
-      "Policy, program, and strategy drafting",
+      "Policy, programme, and strategy drafting",
       "Monitoring and evaluation frameworks",
       "Capacity-building advisory",
     ],
     outcomes: [
-      "Clearer program direction",
+      "Clearer programme direction",
       "Improved implementation quality",
-      "Evidence-informed decision making",
+      "Evidence-informed decision-making",
     ],
     icon: "clipboard",
     seoTitle: "Healthcare and Development Consultation/Advisory",
     seoDescription:
-      "Expert healthcare and development advisory services for planning, programs, capacity building, policy support, and monitoring and evaluation.",
+      "Expert healthcare and development advisory services for planning, programmes, capacity building, policy support, and monitoring and evaluation.",
   },
   {
     slug: "research",
@@ -57,20 +57,20 @@ export const services: Service[] = [
     audience: [
       "Policy teams",
       "Academic and research partners",
-      "Development organizations",
-      "Program implementation teams",
+      "Development organisations",
+      "Programme implementation teams",
     ],
     capabilities: [
       "Public health trend studies",
       "Health systems research",
       "Community development research",
       "Evidence synthesis and reporting",
-      "Program learning support",
+      "Programme learning support",
     ],
     outcomes: [
-      "Better program insight",
+      "Better programme insight",
       "Data-informed strategy",
-      "Useful research outputs for decision makers",
+      "Useful research outputs for decision-makers",
     ],
     icon: "microscope",
     seoTitle: "Health and Development Research",
@@ -82,21 +82,21 @@ export const services: Service[] = [
     title: "Health and Development Outreach",
     eyebrow: "Outreach",
     excerpt:
-      "Community-focused outreach programs that promote health, prevent disease, and improve living conditions.",
+      "Community-focused outreach programmes that promote health, prevent disease, and improve living conditions.",
     description:
-      "FHDS works directly with communities through outreach programs that promote health, prevent disease, and manage public health concerns at the grassroots level. Outreach activities can include health education, screening, referrals, community empowerment, environmental health, sanitation, and clean water initiatives.",
+      "FHDS works directly with communities through outreach programmes that promote health, prevent disease, and manage public health concerns at the grassroots level. Outreach activities can include health education, screening, referrals, community empowerment, environmental health, sanitation, and clean water initiatives.",
     audience: [
       "Communities",
       "Corporate social responsibility teams",
-      "Local government programs",
+      "Local government programmes",
       "NGOs and public health partners",
     ],
     capabilities: [
       "Health education and awareness",
-      "Screening and referral programs",
+      "Screening and referral programmes",
       "Community empowerment initiatives",
       "Environmental health support",
-      "Grassroots program delivery",
+      "Grassroots programme delivery",
     ],
     outcomes: [
       "Improved access to care",
@@ -104,22 +104,22 @@ export const services: Service[] = [
       "Practical support for healthier living conditions",
     ],
     icon: "users",
-    seoTitle: "Health and Development Outreach Programs",
+    seoTitle: "Health and Development Outreach Programmes",
     seoDescription:
-      "Community health and development outreach programs for health education, screening, referrals, empowerment, and public health impact.",
+      "Community health and development outreach programmes for health education, screening, referrals, empowerment, and public health impact.",
   },
   {
     slug: "training",
     title: "Health and Development Training",
     eyebrow: "Training",
     excerpt:
-      "Training programs, seminars, and workshops for professionals and stakeholders in health and development.",
+      "Training programmes, seminars, and workshops for professionals and stakeholders in health and development.",
     description:
-      "FHDS organizes and facilitates training programs that build the capacity of healthcare professionals, community health workers, and other stakeholders. Training is designed to strengthen human capital and improve the delivery of effective, sustainable health and development outcomes.",
+      "FHDS organises and facilitates training programmes that build the capacity of healthcare professionals, community health workers, and other stakeholders. Training is designed to strengthen human capital and improve the delivery of effective, sustainable health and development outcomes.",
     audience: [
       "Healthcare professionals",
       "Community health workers",
-      "Program teams",
+      "Programme teams",
       "Institutional stakeholders",
     ],
     capabilities: [
@@ -131,7 +131,7 @@ export const services: Service[] = [
     ],
     outcomes: [
       "Stronger workforce capacity",
-      "Better program delivery skills",
+      "Better programme delivery skills",
       "Shared standards across teams",
     ],
     icon: "graduation",
@@ -146,9 +146,9 @@ export const services: Service[] = [
     excerpt:
       "Reliable supply of medical equipment, pharmaceuticals, health-related products, and development resources.",
     description:
-      "FHDS supplies medical equipment, pharmaceuticals, and health-related products that support primary healthcare delivery and public health programs. Supply work may also include educational materials, medical technology, digital health solutions, and data analytics resources.",
+      "FHDS supplies medical equipment, pharmaceuticals, and health-related products that support primary healthcare delivery and public health programmes. Supply work may also include educational materials, medical technology, digital health solutions, and data analytics resources.",
     audience: [
-      "Primary healthcare programs",
+      "Primary healthcare programmes",
       "Public health initiatives",
       "Procurement teams",
       "Development projects",
@@ -162,7 +162,7 @@ export const services: Service[] = [
     ],
     outcomes: [
       "Improved resource availability",
-      "Better program readiness",
+      "Better programme readiness",
       "More reliable access to essential health inputs",
     ],
     icon: "package",
@@ -173,11 +173,11 @@ export const services: Service[] = [
   {
     slug: "fortified-elite-care",
     title: "Fortified Elite Care",
-    eyebrow: "Personalized care",
+    eyebrow: "Personalised care",
     excerpt:
-      "Home-based personalized healthcare services for older adults and peace of mind for families.",
+      "Home-based personalised healthcare services for older adults and peace of mind for families.",
     description:
-      "Fortified Elite Care provides personalized healthcare services for older adults in the comfort of their homes. Through routine monitoring, medication reviews, health assessments, and coordinated care, FHDS helps senior citizens age with dignity while supporting families with dependable care.",
+      "Fortified Elite Care provides personalised healthcare services for older adults in the comfort of their homes. Through routine monitoring, medication reviews, health assessments, and coordinated care, FHDS helps senior citizens age with dignity while supporting families with dependable care.",
     audience: [
       "Older adults",
       "Families and caregivers",
@@ -199,7 +199,7 @@ export const services: Service[] = [
     icon: "homeCare",
     seoTitle: "Fortified Elite Care for Older Adults",
     seoDescription:
-      "Personalized home-based healthcare services for older adults, including routine monitoring, assessments, medication reviews, and coordinated care.",
+      "Personalised home-based healthcare services for older adults, including routine monitoring, assessments, medication reviews, and coordinated care.",
   },
 ];
 

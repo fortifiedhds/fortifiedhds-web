@@ -7,7 +7,7 @@ type ContactStripProps = {
 
 export function ContactStrip({
   title = "Start a conversation with FHDS",
-  description = "Speak with the team about advisory support, outreach programs, training, research, supplies, or personalized care.",
+  description = "Speak with the team about advisory support, outreach programmes, training, research, supplies, or personalised care.",
 }: ContactStripProps) {
   return (
     <section className="bg-fhds-teal py-14 text-white">

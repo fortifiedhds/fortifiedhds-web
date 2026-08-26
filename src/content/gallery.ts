@@ -9,12 +9,14 @@ export const galleryItems: GalleryItem[] = [
   {
     title: "Community outreach",
     category: "Outreach",
-    caption: "Approved photos from community programs will be added here.",
+    caption: "Approved photos from community programmes will be added here.",
+    image: "/images/home-a.jpg",
   },
   {
     title: "Eye-care screening",
     category: "Events",
     caption: "Photos from screening, treatment, and referral activities.",
+    image: "/images/eye-care-outreach.jpg",
   },
   {
     title: "Project field work",
@@ -29,7 +31,7 @@ export const galleryItems: GalleryItem[] = [
   {
     title: "Training sessions",
     category: "Events",
-    caption: "Workshop, seminar, and training photos for professional programs.",
+    caption: "Workshop, seminar, and training photos for professional programmes.",
   },
   {
     title: "Supplies and resources",

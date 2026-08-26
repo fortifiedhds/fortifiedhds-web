@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Lexend_Deca } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { site } from "@/lib/site";
 
-const poppins = Poppins({
+const lexendDeca = Lexend_Deca({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-poppins",
+  variable: "--font-lexend-deca",
   display: "swap",
 });
 
@@ -43,8 +42,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-NG" className={poppins.variable}>
-      <body className={poppins.className}>
+    <html lang="en-NG" className={lexendDeca.variable}>
+      <body className={lexendDeca.className}>
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />

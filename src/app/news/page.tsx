@@ -17,8 +17,8 @@ export default function NewsPage() {
     <>
       <PageHero
         eyebrow="News and events"
-        title="Updates from FHDS programs, partnerships, and field work."
-        description="This section starts with the current outreach story and can grow into a fuller news and insights library as the organization publishes more updates."
+        title="Updates from FHDS programmes, partnerships, and field work."
+        description="This section starts with the current outreach story and can grow into a fuller news and insights library as the organisation publishes more updates."
       />
 
       <section className="bg-fhds-cream py-16">

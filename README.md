@@ -17,5 +17,3 @@ npm run build
 npm run lint
 npm run typecheck
 ```
-
-Project planning lives in `docs/fortified-hds-website-plan.md`.

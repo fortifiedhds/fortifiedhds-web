@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = createPageMetadata({
   title: "Privacy Notice",
   description:
-    "Privacy notice for Fortified Health and Development Solutions Limited website inquiries.",
+    "Privacy notice for Fortified Health and Development Solutions Limited website enquiries.",
   path: "/privacy",
 });
 
@@ -15,7 +15,7 @@ export default function PrivacyPage() {
     <>
       <PageHero
         eyebrow="Privacy notice"
-        title="How FHDS handles website inquiries."
+        title="How FHDS handles website enquiries."
         description="This is a practical starter privacy notice for the launch website and should be reviewed by the client before production."
       />
 
@@ -24,15 +24,15 @@ export default function PrivacyPage() {
           {[
             {
               title: "Information collected",
-              body: "When you contact FHDS through the website, the company may receive your name, organization, email address, phone number, selected service interest, and message.",
+              body: "When you contact FHDS through the website, the company may receive your name, organisation, email address, phone number, selected service interest, and message.",
             },
             {
               title: "How information is used",
-              body: "Information submitted through the website is used to respond to inquiries, understand service needs, and follow up on relevant health and development conversations.",
+              body: "Information submitted through the website is used to respond to enquiries, understand service needs, and follow up on relevant health and development conversations.",
             },
             {
               title: "Sharing",
-              body: "FHDS should not sell inquiry information. Information may only be shared where needed to respond to the inquiry, comply with legal obligations, or support an approved service conversation.",
+              body: "FHDS should not sell enquiry information. Information may only be shared where needed to respond to the enquiry, comply with legal obligations, or support an approved service conversation.",
             },
             {
               title: "Contact",

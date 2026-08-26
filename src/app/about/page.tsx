@@ -30,7 +30,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About FHDS"
         title="Designing practical health and development solutions that improve lives."
-        description="FHDS is a Nigeria-based health solutions and development company dedicated to improving the health and wellbeing of individuals, families, organizations, and communities."
+        description="FHDS is a Nigeria-based health solutions and development company dedicated to improving the health and wellbeing of individuals, families, organisations, and communities."
         primaryHref="/services"
         primaryLabel="View services"
         secondaryHref="/contact"
@@ -47,8 +47,8 @@ export default function AboutPage() {
               disease prevention, early intervention, and long-term wellness.
             </p>
             <p>
-              The organization was established in response to the growing need for accessible
-              and preventive healthcare services. FHDS recognizes that many health conditions
+              The organisation was established in response to the growing need for accessible
+              and preventive healthcare services. FHDS recognises that many health conditions
               can be prevented, effectively managed, or detected early through regular health
               monitoring, timely intervention, and professional healthcare guidance.
             </p>
@@ -60,19 +60,10 @@ export default function AboutPage() {
           </div>
           <div className="space-y-4">
             <ImageSlot
-              title="Leadership and team photography"
+              title="Meet the Team"
               caption="Use approved leadership and team photos here once supplied."
               icon="users"
             />
-            {/* <div className="quiet-card p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-fhds-green">
-                Registration
-              </p>
-              <p className="mt-2 text-3xl font-bold text-fhds-teal">{site.registration}</p>
-              <p className="mt-3 text-sm leading-6 text-fhds-muted">
-                Duly registered with the Corporate Affairs Commission of Nigeria.
-              </p>
-            </div> */}
           </div>
         </div>
       </section>
@@ -93,7 +84,7 @@ export default function AboutPage() {
           <article className="quiet-card p-7">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-fhds-green">Vision</p>
             <h2 className="mt-4 text-2xl font-bold text-fhds-ink">
-              Become a leading health and development organization transforming lives and communities.
+              Become a leading health and development organisation transforming lives and communities.
             </h2>
             <p className="mt-4 text-base leading-8 text-fhds-muted">
               The vision is to strengthen individuals and communities through innovative,
@@ -140,7 +131,7 @@ export default function AboutPage() {
               Dr. J.O. Olabisi is a consultant public health physician and lead for FHDS. He
               holds an MBBS from the University of Ibadan and is a Fellow of the West African
               College of Physicians, with over a decade of experience in community medicine.
-              His work spans public health program design, health systems strengthening, and
+              His work spans public health programme design, health systems strengthening, and
               community-focused interventions.
             </p>
             <div className="mt-8">

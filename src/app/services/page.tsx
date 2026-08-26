@@ -10,7 +10,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = createPageMetadata({
   title: "Services",
   description:
-    "Explore FHDS services across health and development advisory, research, outreach, training, supplies, and personalized elder care.",
+    "Explore FHDS services across health and development advisory, research, outreach, training, supplies, and personalised elder care.",
   path: "/services",
 });
 
@@ -29,7 +29,7 @@ export default function ServicesPage() {
         <div className="site-shell">
           <SectionHeading
             title="Service areas"
-            description="Each service area can support standalone engagements or connect with the others for broader health and development programs."
+            description="Each service area can support standalone engagements or connect with the others for broader health and development programmes."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
@@ -44,14 +44,14 @@ export default function ServicesPage() {
           <SectionHeading
             eyebrow="How the work fits together"
             title="From evidence to implementation."
-            description="The strongest FHDS engagements can combine research, program planning, capacity building, community outreach, and supplies into one coherent delivery path."
+            description="The strongest FHDS engagements can combine research, programme planning, capacity building, community outreach, and supplies into one coherent delivery path."
           />
           <div className="grid gap-4 sm:grid-cols-2">
             {[
               "Understand the context through research and stakeholder engagement.",
               "Design the right advisory, training, or outreach model.",
               "Implement with clear quality controls and practical field coordination.",
-              "Review outcomes and strengthen future program decisions.",
+              "Review outcomes and strengthen future programme decisions.",
             ].map((item) => (
               <div key={item} className="quiet-card flex gap-3 p-5">
                 <AppIcon name="check" className="mt-0.5 h-5 w-5 shrink-0 text-fhds-green" />

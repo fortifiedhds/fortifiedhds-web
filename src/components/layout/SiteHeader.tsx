@@ -11,7 +11,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-30 border-b border-fhds-border bg-white/95">
       <div className="site-shell flex min-h-20 items-center justify-between gap-5">
-        <Logo />
+        <Logo size="sm" />
 
         <nav aria-label="Primary navigation" className="hidden items-center gap-1 lg:flex">
           {desktopNav.map((item) =>

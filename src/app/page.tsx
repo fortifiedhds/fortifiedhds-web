@@ -1,7 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ContactStrip } from "@/components/sections/ContactStrip";
 import { ButtonLink } from "@/components/ui/ButtonLink";
-import { ImageSlot } from "@/components/ui/ImageSlot";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ServiceCard } from "@/components/ui/ServiceCard";
 import { newsItems } from "@/content/news";
@@ -26,13 +26,13 @@ export default function Home() {
             {/* <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-fhds-green">
               Health and development solutions
             </p> */}
-            <h1 className="text-4xl font-bold leading-tight tracking-normal text-fhds-ink md:text-6xl">
+            <h1 className="text-3xl font-bold leading-tight tracking-normal text-fhds-ink md:text-4xl">
               Evidence-based solutions for stronger people, systems, and communities.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-fhds-muted">
-              {site.name} supports organizations, communities, governments, and development
+              {site.name} supports organisations, communities, governments, and development
               partners through advisory services, research, outreach, training, supplies, and
-              personalized care.
+              personalised care.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="/services">Explore services</ButtonLink>
@@ -51,11 +51,16 @@ export default function Home() {
           </div>
 
           <div className="space-y-4">
-            <ImageSlot
-              title="Field work and outreach imagery"
-              caption="Real client-approved project photos will replace this placeholder once supplied."
-              icon="stethoscope"
-            />
+            <div className="relative overflow-hidden rounded-2xl">
+              <Image
+                src="/images/home-a.jpg"
+                alt="Fortified HDS field work and outreach"
+                width={800}
+                height={600}
+                priority
+                className="w-full object-cover"
+              />
+            </div>
             {/* <div className="grid grid-cols-3 gap-3">
               {[
                 ["6", "service areas"],
@@ -75,7 +80,7 @@ export default function Home() {
       <section className="border-y border-fhds-border bg-fhds-cream py-16">
         <div className="site-shell">
           <SectionHeading
-            eyebrow="What FHDS does"
+            // eyebrow="What FHDS does"
             title="Integrated support across health, development, and community wellbeing."
             description="The service model combines technical expertise with practical delivery, helping partners move from plans and research to field-level outcomes."
           />
@@ -113,11 +118,11 @@ export default function Home() {
               },
               {
                 title: "Digital health awareness",
-                body: "FHDS recognizes the role of telemedicine, records, and other digital tools in coordinated care.",
+                body: "FHDS recognises the role of telemedicine, records, and other digital tools in coordinated care.",
               },
               {
                 title: "Leadership depth",
-                body: "The organization is led by Dr. J.O. Olabisi, a consultant public health physician with community medicine experience.",
+                body: "The organisation is led by Dr. J.O. Olabisi, a consultant public health physician with community medicine experience.",
               },
             ].map((item) => (
               <article key={item.title} className="quiet-card p-6">
@@ -131,23 +136,27 @@ export default function Home() {
 
       <section className="border-y border-fhds-border bg-fhds-cream py-16">
         <div className="site-shell grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-          <ImageSlot
-            title="WAPCo eye-care outreach"
-            caption="Gallery and news pages are prepared for approved photos from outreach activities."
-            icon="news"
-          />
+          <div className="relative overflow-hidden rounded-2xl">
+            <Image
+              src="/images/eye-care-outreach.jpg"
+              alt="WAPCo eye-care outreach"
+              width={800}
+              height={600}
+              className="w-full object-cover"
+            />
+          </div>
           <article>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-fhds-green">
+            {/* <p className="text-sm font-semibold uppercase tracking-[0.16em] text-fhds-green">
               Featured outreach
-            </p>
+            </p> */}
             <h2 className="mt-3 text-3xl font-bold tracking-normal text-fhds-ink md:text-4xl">
               {featuredNews.title}
             </h2>
             <p className="mt-5 text-base leading-8 text-fhds-muted">{featuredNews.summary}</p>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
               {featuredNews.highlights.map((highlight) => (
-                <li key={highlight} className="flex items-center gap-3 text-sm font-medium text-fhds-ink">
-                  <AppIcon name="check" className="h-5 w-5 text-fhds-green" />
+                <li key={highlight} className="flex items-start gap-3 text-sm font-medium text-fhds-ink">
+                  <AppIcon name="check" className="mt-0.5 h-5 w-5 shrink-0 text-fhds-green" />
                   {highlight}
                 </li>
               ))}
