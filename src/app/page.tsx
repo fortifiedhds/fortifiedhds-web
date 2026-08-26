@@ -1,92 +1,39 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ContactStrip } from "@/components/sections/ContactStrip";
+import { HeroSlider } from "@/components/sections/HeroSlider";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ServiceCard } from "@/components/ui/ServiceCard";
+import { FadeIn } from "@/components/ui/FadeIn";
 import { newsItems } from "@/content/news";
 import { services } from "@/content/services";
 import { AppIcon } from "@/lib/icons";
 import { site } from "@/lib/site";
-
-// const proofPoints = [
-//   "Nigeria-based and CAC registered",
-//   "Led by public health expertise",
-//   "Built around evidence, access, and community impact",
-// ];
 
 export default function Home() {
   const featuredNews = newsItems[0];
 
   return (
     <>
-      <section className="bg-white">
-        <div className="site-shell grid gap-12 py-16 md:py-20 lg:grid-cols-[1.04fr_0.96fr] lg:items-center">
-          <div>
-            {/* <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-fhds-green">
-              Health and development solutions
-            </p> */}
-            <h1 className="text-3xl font-bold leading-tight tracking-normal text-fhds-ink md:text-4xl">
-              Evidence-based solutions for stronger people, systems, and communities.
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-fhds-muted">
-              {site.name} supports organisations, communities, governments, and development
-              partners through advisory services, research, outreach, training, supplies, and
-              personalised care.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="/services">Explore services</ButtonLink>
-              <ButtonLink href="/contact" variant="secondary">
-                Contact FHDS
-              </ButtonLink>
-            </div>
-            {/* <div className="mt-10 grid gap-3 sm:grid-cols-3">
-              {proofPoints.map((point) => (
-                <div key={point} className="flex items-start gap-3 rounded-md border border-fhds-border bg-fhds-cream p-4">
-                  <AppIcon name="check" className="mt-0.5 h-5 w-5 shrink-0 text-fhds-green" />
-                  <p className="text-sm font-medium leading-6 text-fhds-ink">{point}</p>
-                </div>
-              ))}
-            </div> */}
-          </div>
+      {/* ── NEW hero: full-bleed image slider with text overlay ── */}
+      <FadeIn delay={100}>
+        <HeroSlider />
+      </FadeIn>
 
-          <div className="space-y-4">
-            <div className="relative overflow-hidden rounded-2xl">
-              <Image
-                src="/images/home-a.jpg"
-                alt="Fortified HDS field work and outreach"
-                width={800}
-                height={600}
-                priority
-                className="w-full object-cover"
-              />
-            </div>
-            {/* <div className="grid grid-cols-3 gap-3">
-              {[
-                ["6", "service areas"],
-                ["RC", "8235307"],
-                ["NG", "based"],
-              ].map(([value, label]) => (
-                <div key={label} className="quiet-card p-4 text-center">
-                  <p className="text-2xl font-bold text-fhds-teal">{value}</p>
-                  <p className="mt-1 text-xs font-semibold uppercase tracking-[0.12em] text-fhds-muted">{label}</p>
-                </div>
-              ))}
-            </div> */}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-fhds-border bg-fhds-cream py-16">
+      <section className="border-b border-fhds-border bg-fhds-cream py-16">
         <div className="site-shell">
-          <SectionHeading
-            // eyebrow="What FHDS does"
-            title="Integrated support across health, development, and community wellbeing."
-            description="The service model combines technical expertise with practical delivery, helping partners move from plans and research to field-level outcomes."
-          />
+          <FadeIn delay={150}>
+            <SectionHeading
+              title="Integrated support across health, development, and community wellbeing."
+              description="The service model combines technical expertise with practical delivery, helping partners move from plans and research to field-level outcomes."
+            />
+          </FadeIn>
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service) => (
-              <ServiceCard key={service.slug} service={service} />
+            {services.map((service, i) => (
+              <FadeIn key={service.slug} delay={i * 100}>
+                <ServiceCard service={service} />
+              </FadeIn>
             ))}
           </div>
         </div>
@@ -94,9 +41,8 @@ export default function Home() {
 
       <section className="bg-white py-16">
         <div className="site-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <div>
+          <FadeIn>
             <SectionHeading
-              // eyebrow="Company profile"
               title="A health and development partner with preventive care at its core."
               description="FHDS was established in response to the need for accessible and preventive healthcare services, health education, early intervention, community empowerment, and system strengthening."
             />
@@ -105,7 +51,7 @@ export default function Home() {
                 Learn about FHDS
               </ButtonLink>
             </div>
-          </div>
+          </FadeIn>
           <div className="grid gap-4 sm:grid-cols-2">
             {[
               {
@@ -124,11 +70,13 @@ export default function Home() {
                 title: "Leadership depth",
                 body: "The organisation is led by Dr. J.O. Olabisi, a consultant public health physician with community medicine experience.",
               },
-            ].map((item) => (
-              <article key={item.title} className="quiet-card p-6">
-                <h3 className="text-lg font-bold text-fhds-ink">{item.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-fhds-muted">{item.body}</p>
-              </article>
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 100} className="h-full">
+                <article className="quiet-card h-full p-6">
+                  <h3 className="text-lg font-bold text-fhds-ink">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-fhds-muted">{item.body}</p>
+                </article>
+              </FadeIn>
             ))}
           </div>
         </div>
@@ -136,43 +84,46 @@ export default function Home() {
 
       <section className="border-y border-fhds-border bg-fhds-cream py-16">
         <div className="site-shell grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-          <div className="relative overflow-hidden rounded-2xl">
-            <Image
-              src="/images/eye-care-outreach.jpg"
-              alt="WAPCo eye-care outreach"
-              width={800}
-              height={600}
-              className="w-full object-cover"
-            />
-          </div>
-          <article>
-            {/* <p className="text-sm font-semibold uppercase tracking-[0.16em] text-fhds-green">
-              Featured outreach
-            </p> */}
-            <h2 className="mt-3 text-3xl font-bold tracking-normal text-fhds-ink md:text-4xl">
-              {featuredNews.title}
-            </h2>
-            <p className="mt-5 text-base leading-8 text-fhds-muted">{featuredNews.summary}</p>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-              {featuredNews.highlights.map((highlight) => (
-                <li key={highlight} className="flex items-start gap-3 text-sm font-medium text-fhds-ink">
-                  <AppIcon name="check" className="mt-0.5 h-5 w-5 shrink-0 text-fhds-green" />
-                  {highlight}
-                </li>
-              ))}
-            </ul>
-            <Link
-              href={`/news/${featuredNews.slug}`}
-              className="focus-ring mt-8 inline-flex items-center gap-2 rounded-md text-sm font-semibold text-fhds-teal hover:text-fhds-green"
-            >
-              Read the story
-              <AppIcon name="arrowRight" className="h-4 w-4" />
-            </Link>
-          </article>
+          <FadeIn delay={150}>
+            <div className="relative overflow-hidden rounded-2xl">
+              <Image
+                src="/images/eye-care-outreach.jpg"
+                alt="WAPCo eye-care outreach"
+                width={800}
+                height={600}
+                className="w-full object-cover"
+              />
+            </div>
+          </FadeIn>
+          <FadeIn delay={250}>
+            <article>
+              <h2 className="mt-3 text-3xl font-bold tracking-normal text-fhds-ink md:text-4xl">
+                {featuredNews.title}
+              </h2>
+              <p className="mt-5 text-base leading-8 text-fhds-muted">{featuredNews.summary}</p>
+              <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+                {featuredNews.highlights.map((highlight) => (
+                  <li key={highlight} className="flex items-start gap-3 text-sm font-medium text-fhds-ink">
+                    <AppIcon name="check" className="mt-0.5 h-5 w-5 shrink-0 text-fhds-green" />
+                    {highlight}
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href={`/news/${featuredNews.slug}`}
+                className="focus-ring mt-8 inline-flex items-center gap-2 rounded-md text-sm font-semibold text-fhds-teal hover:text-fhds-green"
+              >
+                Read the story
+                <AppIcon name="arrowRight" className="h-4 w-4" />
+              </Link>
+            </article>
+          </FadeIn>
         </div>
       </section>
 
-      <ContactStrip />
+      <FadeIn>
+        <ContactStrip />
+      </FadeIn>
     </>
   );
 }

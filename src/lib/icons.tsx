@@ -19,6 +19,7 @@ import {
   ShieldCheck,
   Stethoscope,
   UsersRound,
+  X,
 } from "lucide-react";
 
 export const icons = {
@@ -42,6 +43,7 @@ export const icons = {
   shield: ShieldCheck,
   stethoscope: Stethoscope,
   users: UsersRound,
+  x: X,
 } as const;
 
 export type IconName = keyof typeof icons;
