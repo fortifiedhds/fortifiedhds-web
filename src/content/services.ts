@@ -10,6 +10,7 @@ export type Service = {
   capabilities: string[];
   outcomes: string[];
   icon: IconName;
+  image: string;
   seoTitle: string;
   seoDescription: string;
 };
@@ -42,6 +43,7 @@ export const services: Service[] = [
       "Evidence-informed decision-making",
     ],
     icon: "clipboard",
+    image: "/images/advisory.jpg",
     seoTitle: "Healthcare and Development Consultation/Advisory",
     seoDescription:
       "Expert healthcare and development advisory services for planning, programmes, capacity building, policy support, and monitoring and evaluation.",
@@ -73,6 +75,7 @@ export const services: Service[] = [
       "Useful research outputs for decision-makers",
     ],
     icon: "microscope",
+    image: "/images/research.jpg",
     seoTitle: "Health and Development Research",
     seoDescription:
       "Evidence-based public health, health systems, and community development research for policymakers and development partners.",
@@ -104,6 +107,7 @@ export const services: Service[] = [
       "Practical support for healthier living conditions",
     ],
     icon: "users",
+    image: "/images/outreach.jpg",
     seoTitle: "Health and Development Outreach Programmes",
     seoDescription:
       "Community health and development outreach programmes for health education, screening, referrals, empowerment, and public health impact.",
@@ -135,6 +139,7 @@ export const services: Service[] = [
       "Shared standards across teams",
     ],
     icon: "graduation",
+    image: "/images/training.jpg",
     seoTitle: "Health and Development Training",
     seoDescription:
       "Professional training, seminars, and workshops for healthcare workers, community health workers, and development stakeholders.",
@@ -166,6 +171,7 @@ export const services: Service[] = [
       "More reliable access to essential health inputs",
     ],
     icon: "package",
+    image: "/images/supplies.jpg",
     seoTitle: "Health Supplies and Medical Commodities",
     seoDescription:
       "Supply of medical equipment, pharmaceuticals, health products, educational materials, and digital health resources.",
@@ -197,6 +203,7 @@ export const services: Service[] = [
       "Better care coordination for families",
     ],
     icon: "homeCare",
+    image: "/images/elite-care.jpg",
     seoTitle: "Fortified Elite Care for Older Adults",
     seoDescription:
       "Personalised home-based healthcare services for older adults, including routine monitoring, assessments, medication reviews, and coordinated care.",

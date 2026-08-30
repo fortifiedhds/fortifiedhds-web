@@ -20,16 +20,16 @@ export function PageHero({
   secondaryLabel,
 }: PageHeroProps) {
   return (
-    <section className="border-b border-fhds-border bg-white">
-      <div className="site-shell py-16 md:py-20">
-        <div className="max-w-4xl">
+    <section className="border-b border-fhds-border bg-white text-center">
+      <div className="site-shell py-16 md:py-24">
+        <div className="mx-auto max-w-5xl">
           {/* <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-fhds-green">
             {eyebrow}
           </p> */}
-          <h1 className="text-3xl font-bold leading-tight tracking-normal text-fhds-ink md:text-4xl">{title}</h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-fhds-muted md:text-xl">{description}</p>
+          <h1 className="text-3xl font-bold leading-tight tracking-normal text-fhds-ink md:text-5xl lg:text-[54px]">{title}</h1>
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-fhds-muted md:text-xl">{description}</p>
           {primaryHref && primaryLabel ? (
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <ButtonLink href={primaryHref}>{primaryLabel}</ButtonLink>
               {secondaryHref && secondaryLabel ? (
                 <ButtonLink href={secondaryHref} variant="secondary">

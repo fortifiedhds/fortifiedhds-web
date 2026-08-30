@@ -42,7 +42,7 @@ export default function ServicesPage() {
       <section className="bg-white py-16">
         <div className="site-shell grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
           <SectionHeading
-            eyebrow="How the work fits together"
+            // eyebrow="How the work fits together"
             title="From evidence to implementation."
             description="The strongest FHDS engagements can combine research, programme planning, capacity building, community outreach, and supplies into one coherent delivery path."
           />
