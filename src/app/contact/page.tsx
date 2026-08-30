@@ -24,11 +24,25 @@ export default function ContactPage() {
       />
 
       <section className="bg-fhds-cream py-16">
-        <div className="site-shell grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-          <aside className="space-y-4">
-            <div className="quiet-card p-6">
+        <div className="site-shell grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-stretch">
+          <aside className="h-full">
+            <div className="quiet-card flex h-full flex-col p-6 md:p-8">
               <h2 className="text-xl font-bold text-fhds-ink">Contact details</h2>
-              <ul className="mt-6 space-y-5">
+              
+              {/* Google Maps Embed */}
+              <div className="my-6 flex-1 w-full min-h-[250px] overflow-hidden rounded-xl border border-fhds-border bg-fhds-cream">
+                <iframe 
+                  title="FHDS Office Location"
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  loading="lazy" 
+                  allowFullScreen 
+                  src={`https://maps.google.com/maps?q=${encodeURIComponent(site.contact.address)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+                />
+              </div>
+
+              <ul className="space-y-5">
                 <li className="flex gap-3">
                   <AppIcon name="mapPin" className="mt-1 h-5 w-5 shrink-0 text-fhds-green" />
                   <span className="text-sm leading-7 text-fhds-muted">{site.contact.address}</span>

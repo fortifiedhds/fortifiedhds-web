@@ -77,7 +77,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
               {/* Who this is for (Tags) */}
               <div className="mb-8">
                 <h3 className="mb-3 text-xs font-bold uppercase tracking-widest text-fhds-green">
-                  Target Audience
+                  Who We Support
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {service.audience.map((item) => (
@@ -94,7 +94,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
               {/* Capabilities Grid */}
               <div className="mb-8 border-t border-fhds-border pt-6">
                 <h3 className="mb-4 text-xs font-bold uppercase tracking-widest text-fhds-green">
-                  Core Capabilities
+                  What We Do
                 </h3>
                 <ul className="grid gap-x-4 gap-y-3 sm:grid-cols-2">
                   {service.capabilities.map((item) => (

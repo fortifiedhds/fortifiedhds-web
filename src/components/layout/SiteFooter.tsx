@@ -6,7 +6,7 @@ import { Logo } from "@/components/layout/Logo";
 
 export function SiteFooter() {
   const companyLinks = navigation.filter(
-    (item) => item.label !== "Home" && item.label !== "Services",
+    (item) => item.label !== "Home" && item.label !== "Services" && item.label !== "Contact",
   );
 
   return (
@@ -32,7 +32,9 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h2 className="text-sm font-bold uppercase tracking-[0.16em] text-fhds-ink">Services</h2>
+          <h2 className="text-sm font-bold uppercase tracking-[0.16em] text-fhds-ink">
+            <Link href="/services" className="hover:text-fhds-teal transition-colors">Services</Link>
+          </h2>
           <ul className="mt-4 space-y-3">
             {services.map((service) => (
               <li key={service.slug}>
@@ -48,7 +50,9 @@ export function SiteFooter() {
         </div>
 
         <address className="not-italic">
-          <h2 className="text-sm font-bold uppercase tracking-[0.16em] text-fhds-ink">Contact</h2>
+          <h2 className="text-sm font-bold uppercase tracking-[0.16em] text-fhds-ink">
+            <Link href="/contact" className="hover:text-fhds-teal transition-colors">Contact</Link>
+          </h2>
           <ul className="mt-4 space-y-3 text-sm text-fhds-muted">
             <li className="flex gap-2">
               <AppIcon name="mapPin" className="mt-0.5 h-4 w-4 shrink-0 text-fhds-green" />

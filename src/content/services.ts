@@ -43,7 +43,7 @@ export const services: Service[] = [
       "Evidence-informed decision-making",
     ],
     icon: "clipboard",
-    image: "/images/advisory.jpg",
+    image: "/images/hero/advisory.jpg",
     seoTitle: "Healthcare and Development Consultation/Advisory",
     seoDescription:
       "Expert healthcare and development advisory services for planning, programmes, capacity building, policy support, and monitoring and evaluation.",
@@ -139,7 +139,7 @@ export const services: Service[] = [
       "Shared standards across teams",
     ],
     icon: "graduation",
-    image: "/images/training.jpg",
+    image: "/images/hero/training.jpg",
     seoTitle: "Health and Development Training",
     seoDescription:
       "Professional training, seminars, and workshops for healthcare workers, community health workers, and development stakeholders.",
@@ -203,7 +203,7 @@ export const services: Service[] = [
       "Better care coordination for families",
     ],
     icon: "homeCare",
-    image: "/images/elite-care.jpg",
+    image: "/images/hero/elite-care.jpg",
     seoTitle: "Fortified Elite Care for Older Adults",
     seoDescription:
       "Personalised home-based healthcare services for older adults, including routine monitoring, assessments, medication reviews, and coordinated care.",

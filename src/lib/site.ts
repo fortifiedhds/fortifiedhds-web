@@ -5,7 +5,7 @@ export const site = {
   description:
     "Evidence-based health and development solutions for stronger people, systems, and communities.",
   contact: {
-    address: "No88, Adeoyo Maternity Hospital Way, Yemetu, Ibadan, Oyo State, Nigeria.",
+    address: "No 88, Adeoyo Maternity Hospital Way, Yemetu, Ibadan, Oyo State, Nigeria.",
     phone: "+2348067294003",
     whatsapp: "+2348034747172",
     email: "fhdsltd@gmail.com",

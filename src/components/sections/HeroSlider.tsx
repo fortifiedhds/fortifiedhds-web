@@ -7,11 +7,11 @@ import { site } from "@/lib/site";
 
 const slides = [
   {
-    image: "/images/hero/advisory.png",
+    image: "/images/hero/advisory.jpg",
     alt: "Healthcare advisory session with professionals",
   },
   {
-    image: "/images/hero/research.png",
+    image: "/images/hero/research.jpg",
     alt: "Health and development research in the field",
   },
   {
@@ -19,7 +19,7 @@ const slides = [
     alt: "Community health outreach programme",
   },
   {
-    image: "/images/hero/training.png",
+    image: "/images/hero/training.jpg",
     alt: "Professional health and development training workshop",
   },
   {
