@@ -16,7 +16,7 @@ export default function PrivacyPage() {
       <PageHero
         eyebrow="Privacy notice"
         title="How FHDS handles website enquiries."
-        description="This is a practical starter privacy notice for the launch website and should be reviewed by the client before production."
+        description="This Privacy Notice explains how we collect, use, and protect your personal information when you interact with our website and services."
       />
 
       <section className="bg-fhds-cream py-16">
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
             },
             {
               title: "Sharing",
-              body: "FHDS should not sell enquiry information. Information may only be shared where needed to respond to the enquiry, comply with legal obligations, or support an approved service conversation.",
+              body: "FHDS do not sell enquiry information. Information may only be shared where needed to respond to the enquiry, comply with legal obligations, or support an approved service conversation.",
             },
             {
               title: "Contact",
