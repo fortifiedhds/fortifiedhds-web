@@ -4,7 +4,7 @@ import Image from "next/image";
 type LogoSize = "sm" | "lg";
 
 const sizeMap: Record<LogoSize, { width: number; height: number; className: string }> = {
-  sm: { width: 210, height: 84, className: "h-14 w-auto" },
+  sm: { width: 210, height: 84, className: "h-10 w-auto lg:h-14" },
   lg: { width: 220, height: 88, className: "h-20 w-auto" },
 };
 
