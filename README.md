@@ -7,7 +7,7 @@ Website for Fortified Health and Development Solutions Limited.
 - Next.js App Router
 - TypeScript
 - Tailwind CSS
-- Vercel deployment target
+- Vercel Deployment
 
 ## Scripts
 

@@ -11,11 +11,18 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 
 export function SiteHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
-  
+
   const desktopNav = navigation.filter((item) => item.label !== "Contact");
-  // Keep all navigation items for mobile, including Home
   const mobileNav = navigation;
+
+  useEffect(() => {
+    const onScroll = () => setIsScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   // Close mobile menu on route change
   useEffect(() => {
@@ -24,20 +31,36 @@ export function SiteHeader() {
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
-    if (mobileMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
+    document.body.style.overflow = mobileMenuOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
   }, [mobileMenuOpen]);
 
   return (
-    // Removed backdrop-blur-sm: CSS filters create a new containing block which breaks 'fixed' overlays!
-    <header className="sticky top-0 z-50 border-b border-fhds-border bg-white">
-      <div className="site-shell flex min-h-20 items-center justify-between gap-5 relative z-50 bg-white">
+    /*
+      IMPORTANT: Do NOT add backdrop-blur / filter / transform to <header> itself.
+      CSS filters create a new containing block, trapping the fixed mobile overlay
+      inside the 80px header. The blur is applied to the inner absolute div instead.
+    */
+    <header className="sticky top-0 z-50 min-h-20">
+
+      {/*
+        The background layer sits absolutely behind all content.
+        It transitions smoothly between solid white (at top) and
+        a frosted-glass transparent (on scroll).
+        Because it is a CHILD element (not the header itself), it never
+        creates a containing block that would trap the fixed mobile menu.
+      */}
+      <div
+        aria-hidden="true"
+        className={`pointer-events-none absolute inset-0 border-b transition-[background-color,border-color,backdrop-filter] duration-500 ease-in-out ${
+          isScrolled
+            ? "border-fhds-border/60 bg-white/99 backdrop-blur-md"
+            : "border-fhds-border bg-white"
+        }`}
+      />
+
+      {/* Main nav bar — always same height, never shifts */}
+      <div className="site-shell relative z-50 flex min-h-20 items-center justify-between gap-5">
         <div onClick={() => setMobileMenuOpen(false)}>
           <Logo size="sm" />
         </div>
@@ -124,7 +147,7 @@ export function SiteHeader() {
                     {item.label}
                     <AppIcon name="chevronDown" className="h-5 w-5 transition-transform group-open:rotate-180" />
                   </summary>
-                  <div className="mt-3 flex flex-col gap-3 pl-4 border-l-2 border-fhds-border">
+                  <div className="mt-3 flex flex-col gap-3 border-l-2 border-fhds-border pl-4">
                     <Link
                       href="/services"
                       className="text-base font-semibold text-fhds-ink hover:text-fhds-teal"
@@ -152,7 +175,7 @@ export function SiteHeader() {
                 </Link>
               ),
             )}
-            
+
             <div className="mt-4">
               <ButtonLink href="/contact" className="w-full">
                 Contact Us Now

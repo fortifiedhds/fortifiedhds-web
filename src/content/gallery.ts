@@ -10,7 +10,7 @@ export const galleryItems: GalleryItem[] = [
     title: "Community outreach",
     category: "Outreach",
     caption: "Approved photos from community programmes will be added here.",
-    image: "/images/elite-care.jpg",
+    image: "/images/hero/elite-care.jpg",
   },
   {
     title: "Eye-care screening",

@@ -18,7 +18,7 @@ export function Logo({ size = "lg" }: LogoProps) {
   return (
     <Link href="/" className="focus-ring flex items-center rounded-md">
       <Image
-        src="/images/fortified-logo.svg"
+        src="/images/logo.svg"
         alt="Fortified Health and Development Solutions"
         width={width}
         height={height}
