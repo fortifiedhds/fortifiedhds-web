@@ -126,7 +126,7 @@ export function ContactForm({ services }: ContactFormProps) {
         </label>
       </div>
       <label className="grid gap-2 text-sm font-semibold text-fhds-ink">
-        Service interest
+        Service Interest
         <select
           name="service Interest"
           className="focus-ring min-h-12 w-full rounded-md border border-fhds-border bg-white px-4 text-base font-normal text-fhds-ink disabled:opacity-50"
