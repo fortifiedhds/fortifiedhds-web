@@ -139,7 +139,7 @@ export const services: Service[] = [
       "Shared standards across teams",
     ],
     icon: "graduation",
-    image: "/images/hero/training.jpg",
+    image: "/images/training.jpg",
     seoTitle: "Health and Development Training",
     seoDescription:
       "Professional training, seminars, and workshops for healthcare workers, community health workers, and development stakeholders.",
