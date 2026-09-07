@@ -27,9 +27,11 @@ export function PageHero({
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-fhds-cream/80 md:text-xl">{description}</p>
           {primaryHref && primaryLabel ? (
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <ButtonLink href={primaryHref}>{primaryLabel}</ButtonLink>
+              <ButtonLink href={primaryHref} className="w-full sm:w-auto">
+                {primaryLabel}
+              </ButtonLink>
               {secondaryHref && secondaryLabel ? (
-                <ButtonLink href={secondaryHref} variant="white">
+                <ButtonLink href={secondaryHref} variant="white" className="w-full sm:w-auto">
                   {secondaryLabel}
                 </ButtonLink>
               ) : null}
