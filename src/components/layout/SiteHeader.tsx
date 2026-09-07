@@ -114,20 +114,14 @@ export function SiteHeader() {
         {/* Mobile Menu Toggle Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="focus-ring flex cursor-pointer items-center gap-2 rounded-md border border-fhds-border bg-white px-3 py-2 text-sm font-semibold text-fhds-ink transition-colors hover:bg-fhds-cream lg:hidden"
+          className="focus-ring flex cursor-pointer items-center justify-center rounded-md border border-fhds-border bg-white p-2 text-fhds-ink transition-colors hover:bg-fhds-cream lg:hidden"
           aria-expanded={mobileMenuOpen}
           aria-label="Toggle mobile menu"
         >
           {mobileMenuOpen ? (
-            <>
-              <AppIcon name="x" className="h-5 w-5" />
-              Close
-            </>
+            <AppIcon name="x" className="h-6 w-6" />
           ) : (
-            <>
-              <AppIcon name="menu" className="h-5 w-5" />
-              Menu
-            </>
+            <AppIcon name="menu" className="h-6 w-6" />
           )}
         </button>
       </div>
@@ -147,7 +141,7 @@ export function SiteHeader() {
                     {item.label}
                     <AppIcon name="chevronDown" className="h-5 w-5 transition-transform group-open:rotate-180" />
                   </summary>
-                  <div className="mt-3 flex flex-col gap-3 border-l-2 border-fhds-border pl-4">
+                  <div className="mt-3 flex flex-col gap-3 pl-4">
                     <Link
                       href="/services"
                       className="text-base font-semibold text-fhds-ink hover:text-fhds-teal"
