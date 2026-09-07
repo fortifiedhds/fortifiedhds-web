@@ -172,7 +172,7 @@ export default function AboutPage() {
                   Lead Strategist, Fortified Health & Development Solutions Limited
                 </p>
                 <div className="mt-6 h-px w-16 bg-fhds-border lg:mt-8" />
-                <div className="mt-8 w-full space-y-5 text-base leading-8 text-fhds-muted text-justify">
+                <div className="mt-8 w-full space-y-5 text-base leading-8 text-fhds-muted text-left lg:text-justify">
                   <p>
                     Dr. J.O. Olabisi is a consultant public health physician and the team lead for Fortified Health & Development Solutions Limited. His work spans public health program design, health systems strengthening, and community-focused interventions, bringing clinical rigor and field-tested expertise to every engagement. He has also served in Industry developing disease progression models with best-in-class methods and mathematical modelling to forecast patient populations by line of therapy as well as consulting projects for medical, pharmaceutical and biotechnology industries across global markets.
                   </p>
@@ -193,7 +193,7 @@ export default function AboutPage() {
                   Praise Adebisi, <span className="text-fhds-teal">M.Ed.</span>
                 </h2>
                 <div className="mt-6 h-px w-16 bg-fhds-border lg:mt-8" />
-                <div className="mt-8 w-full space-y-5 text-base leading-8 text-fhds-muted text-justify">
+                <div className="mt-8 w-full space-y-5 text-base leading-8 text-fhds-muted text-left lg:text-justify">
                   <p>
                     Praise Adebisi is a research, administration and programme development professional who supports the translation of ideas into well-structured programmes, systems and organisational processes. Her work combines strategic thinking, research and evidence, technical documentation, programme coordination and administrative management, with a particular strength in bringing clarity and structure to complex ideas.
                   </p>
@@ -217,7 +217,7 @@ export default function AboutPage() {
                   Seyi Olanipekun, <span className="text-fhds-teal">M.Sc.</span>
                 </h2>
                 <div className="mt-6 h-px w-16 bg-fhds-border lg:mt-8" />
-                <div className="mt-8 w-full space-y-5 text-base leading-8 text-fhds-muted text-justify">
+                <div className="mt-8 w-full space-y-5 text-base leading-8 text-fhds-muted text-left lg:text-justify">
                   <p>
                     Seyi Olanipekun is a health and development professional with close to eight years of field program coordination experience. Holding a Bachelor&apos;s degree in Criminology and Security Studies and a Master&apos;s degree in Sociology, he combines a strong analytical understanding of human behavior and social systems with the discipline needed to plan and execute programs in complex, resource-constrained field environments. His career spans contract and consulting engagements with leading international organizations — including WHO, JHPIEGO, Malaria Consortium, Africa CDC, Oxford Policy Management, Mercy Corps, and the Federal Ministry of Health — where he has coordinated field teams, managed logistics for data collection and outreach activities, and ensured the smooth delivery of programs across multiple states.
                   </p>
