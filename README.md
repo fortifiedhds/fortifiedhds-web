@@ -28,3 +28,5 @@ To enable the contact form functionality, you need a Web3Forms access key.
    ```env
    NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_access_key_here
    ```
+
+Set `NEXT_PUBLIC_FEC_URL` to the Fortified Elite Care frontend URL used by the **Learn more about FEC** link. The current testing URL is `https://fortified-elite-care-frontend.vercel.app/`. Configure it in the hosting environment as well as your local `.env`, and rebuild after changing it because Next.js reads this value during the build.
