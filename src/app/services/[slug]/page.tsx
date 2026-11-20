@@ -7,6 +7,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { services, getServiceBySlug } from "@/content/services";
 import { AppIcon } from "@/lib/icons";
 import { createPageMetadata } from "@/lib/metadata";
+import { site } from "@/lib/site";
 
 type ServicePageProps = {
   params: Promise<{ slug: string }>;
@@ -124,10 +125,15 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
               </div>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink href="/contact" className="w-full sm:w-auto">
                 Request a conversation
               </ButtonLink>
+              {service.slug === "fortified-elite-care" && (
+                <ButtonLink href={site.fecUrl} variant="secondary" className="w-full sm:w-auto">
+                  Learn more about FEC
+                </ButtonLink>
+              )}
             </div>
           </div>
         </div>

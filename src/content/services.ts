@@ -181,13 +181,16 @@ export const services: Service[] = [
     title: "Fortified Elite Care",
     eyebrow: "Personalised care",
     excerpt:
-      "Home-based personalised healthcare services for older adults and peace of mind for families.",
+      "Personalised home healthcare for older adults, executives, people in high-stress jobs and other adults.",
     description:
-      "Fortified Elite Care provides personalised healthcare services for older adults in the comfort of their homes. Through routine monitoring, medication reviews, health assessments, and coordinated care, FHDS helps senior citizens age with dignity while supporting families with dependable care.",
+      "Fortified Elite Care provides personalised healthcare services for older adults, employees in high-stress jobs, executives and other interested adults in the comfort of their homes. Through routine monitoring, medication reviews, health assessments and coordinated care, FHDS helps senior citizens and other clients live and work with dignity while supporting families with dependable care.",
     audience: [
       "Older adults",
       "Families and caregivers",
       "Busy professionals supporting ageing parents",
+      "People in high-stress jobs",
+      "Business executives",
+      "Adults seeking ongoing routine monitoring",
       "Home care coordinators",
     ],
     capabilities: [
@@ -198,15 +201,15 @@ export const services: Service[] = [
       "Family peace-of-mind updates",
     ],
     outcomes: [
-      "Dignified ageing at home",
+      "Dignified living and working",
       "Earlier health issue detection",
       "Better care coordination for families",
     ],
     icon: "homeCare",
     image: "/images/hero/elite-care.jpg",
-    seoTitle: "Fortified Elite Care for Older Adults",
+    seoTitle: "Fortified Elite Care | Personalised Home Healthcare for Adults",
     seoDescription:
-      "Personalised home-based healthcare services for older adults, including routine monitoring, assessments, medication reviews, and coordinated care.",
+      "Personalised home healthcare for older adults, executives, employees in high-stress jobs and other adults, with routine monitoring and coordinated care.",
   },
 ];
 

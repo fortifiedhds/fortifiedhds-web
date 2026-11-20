@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ContactStrip } from "@/components/sections/ContactStrip";
-import { ImageSlot } from "@/components/ui/ImageSlot";
 import { newsItems, getNewsBySlug } from "@/content/news";
-import { AppIcon } from "@/lib/icons";
 import { createPageMetadata } from "@/lib/metadata";
 import Image from "next/image";
 

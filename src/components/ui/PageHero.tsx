@@ -11,7 +11,6 @@ type PageHeroProps = {
 };
 
 export function PageHero({
-  eyebrow,
   title,
   description,
   primaryHref,

@@ -9,7 +9,6 @@ import { FadeIn } from "@/components/ui/FadeIn";
 import { newsItems } from "@/content/news";
 import { services } from "@/content/services";
 import { AppIcon } from "@/lib/icons";
-import { site } from "@/lib/site";
 
 export default function Home() {
   const featuredNews = newsItems[0];

@@ -2,6 +2,7 @@ export const site = {
   name: "Fortified Health and Development Solutions Limited",
   shortName: "Fortified HDS",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://fortifiedhds.com",
+  fecUrl: process.env.NEXT_PUBLIC_FEC_URL || "https://fortifiedelitecare.com",
   description:
     "Evidence-based health and development solutions for stronger people, systems, and communities.",
   contact: {

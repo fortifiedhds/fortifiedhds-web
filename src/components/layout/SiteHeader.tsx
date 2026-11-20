@@ -10,9 +10,13 @@ import { Logo } from "@/components/layout/Logo";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 
 export function SiteHeader() {
+  const pathname = usePathname();
+  return <HeaderNavigation key={pathname} />;
+}
+
+function HeaderNavigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const pathname = usePathname();
 
   const desktopNav = navigation.filter((item) => item.label !== "Contact");
   const mobileNav = navigation;
@@ -23,11 +27,6 @@ export function SiteHeader() {
     onScroll();
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  // Close mobile menu on route change
-  useEffect(() => {
-    setMobileMenuOpen(false);
-  }, [pathname]);
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
@@ -128,8 +127,10 @@ export function SiteHeader() {
 
       {/* Slide-Up Full Screen Mobile Menu overlay */}
       <div
-        className={`fixed inset-x-0 bottom-0 top-20 z-40 bg-white transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] lg:hidden ${
-          mobileMenuOpen ? "translate-y-0" : "translate-y-full"
+        aria-hidden={!mobileMenuOpen}
+        inert={!mobileMenuOpen}
+        className={`fixed inset-x-0 bottom-0 top-20 z-40 bg-white transition-[transform,visibility] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] lg:hidden ${
+          mobileMenuOpen ? "visible translate-y-0" : "invisible translate-y-full"
         }`}
       >
         <div className="h-full overflow-y-auto px-6 py-8">

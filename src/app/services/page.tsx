@@ -10,7 +10,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = createPageMetadata({
   title: "Services",
   description:
-    "Explore FHDS services across health and development advisory, research, outreach, training, supplies, and personalised elder care.",
+    "Explore FHDS services across health and development advisory, research, outreach, training, supplies and personalised home healthcare for adults.",
   path: "/services",
 });
 

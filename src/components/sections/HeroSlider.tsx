@@ -28,7 +28,7 @@ const slides = [
   },
   {
     image: "/images/hero/elite-care.jpg",
-    alt: "Personalised home care for older adults",
+    alt: "A healthcare professional checks an adult’s blood pressure",
   },
 ];
 

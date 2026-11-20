@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { ContactStrip } from "@/components/sections/ContactStrip";
-import { ButtonLink } from "@/components/ui/ButtonLink";
 import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AppIcon } from "@/lib/icons";
